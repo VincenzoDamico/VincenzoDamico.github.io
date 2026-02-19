@@ -1,6 +1,6 @@
-/* Core Variables & Reset */
+/* style.css */
 :root {
-    --bg-color: #f4f4f0; /* Off-white, paper texture feel */
+    --bg-color: #f8f9fa;
     --text-color: #0a0a0a;
     --border-color: #0a0a0a;
     --font-main: 'Inter', sans-serif;
@@ -9,84 +9,41 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-main);
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
+body { background-color: var(--bg-color); color: var(--text-color); font-family: var(--font-main); line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
-/* Typography Utilities */
+/* Typography */
 .mono-text { font-family: var(--font-mono); font-size: 0.85rem; text-transform: uppercase; }
-.section-title { font-family: var(--font-mono); font-size: 1rem; text-transform: uppercase; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 3rem; }
+.page-title { font-size: clamp(3rem, 8vw, 6rem); font-weight: 800; line-height: 1; letter-spacing: -0.04em; margin-bottom: 2rem; }
+.section-title { font-family: var(--font-mono); font-size: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 3rem; }
 
 /* Navigation */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 4vw;
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    background-color: var(--bg-color);
-    z-index: 100;
-}
-.nav-brand { font-weight: 700; font-size: 1.1rem; }
+.navbar { display: flex; justify-content: space-between; padding: 1.5rem 4vw; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; background-color: var(--bg-color); z-index: 100; }
+.nav-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: var(--text-color); }
 .nav-links a { color: var(--text-color); text-decoration: none; margin-left: 2rem; font-weight: 500; font-size: 0.9rem; transition: opacity 0.3s; }
-.nav-links a:hover { opacity: 0.5; }
+.nav-links a:hover, .nav-links a.active { opacity: 0.5; text-decoration: underline; }
 
-/* Hero Section */
-.hero { padding: 12vw 4vw; border-bottom: 1px solid var(--border-color); }
-.mono-subtitle { margin-bottom: 1rem; color: #555; }
-.hero h1 { font-size: clamp(3rem, 6vw, 6rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 4rem; }
+/* Layouts */
+.container { padding: 6vw 4vw; min-height: 80vh; }
+.split-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; }
+.sticky-sidebar { position: sticky; top: 120px; }
 
-/* Hero Stats Bar */
-.hero-stats { display: flex; gap: 4vw; border-top: 1px solid var(--border-color); padding-top: 2rem; }
-.stat-box { display: flex; flex-direction: column; }
-.stat-value { font-family: var(--font-mono); font-size: 2rem; font-weight: 700; }
-.stat-label { font-size: 0.85rem; color: #555; }
+/* Cards & Lists */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+.card { display: block; text-decoration: none; color: var(--text-color); border: 1px solid var(--border-color); padding: 2rem; transition: all 0.4s; background: transparent; }
+.card:hover { background-color: var(--text-color); color: var(--bg-color); transform: translateY(-5px); }
+.card-header { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+.tags span { border: 1px solid currentColor; padding: 0.2rem 0.6rem; font-family: var(--font-mono); font-size: 0.75rem; margin-right: 0.5rem; }
 
-/* Sections */
-.section { padding: 8vw 4vw; }
-.border-top { border-top: 1px solid var(--border-color); }
-
-/* Timeline (Experience) */
-.timeline-item { display: grid; grid-template-columns: 1fr 3fr; gap: 2rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 3rem; margin-bottom: 3rem; }
+/* Timeline */
+.timeline-item { border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 2rem; }
 .timeline-item h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-.timeline-item p { color: #444; font-size: 1.1rem; max-width: 800px; }
+.timeline-meta { color: #555; margin-bottom: 1rem; }
 
-/* Project Grid - The "Invert" Effect */
-.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-.project-card {
-    display: block;
-    text-decoration: none;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    padding: 2rem;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    background-color: transparent;
-}
-.card-header { display: flex; justify-content: space-between; margin-bottom: 3rem; }
-.project-card h3 { font-size: 1.8rem; margin-bottom: 1rem; }
-.project-card p { color: #555; font-size: 1rem; margin-bottom: 2rem; transition: color 0.4s; }
-.card-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.card-tags span { border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; font-family: var(--font-mono); font-size: 0.75rem; }
-
-/* High-End Hover State */
-.project-card:hover { background-color: var(--text-color); color: var(--bg-color); transform: translateY(-5px); }
-.project-card:hover p { color: #ccc; }
-.project-card:hover .card-tags span { border-color: var(--bg-color); }
+/* Animations */
+.reveal { opacity: 0; transform: translateY(30px); transition: 0.8s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* Footer */
-.footer { padding: 8vw 4vw; background-color: var(--text-color); color: var(--bg-color); }
-.footer .section-title { border-color: #333; }
-.massive-link { display: block; font-size: clamp(2rem, 5vw, 5rem); font-weight: 700; color: var(--bg-color); text-decoration: none; margin-bottom: 4rem; transition: opacity 0.3s; }
-.massive-link:hover { opacity: 0.7; }
-.social-links { display: flex; gap: 2rem; border-top: 1px solid #333; padding-top: 2rem; }
-.social-links a { color: var(--bg-color); text-decoration: none; }
-.social-links a:hover { text-decoration: underline; }
-
-/* Animation Classes */
-.reveal-elem { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease; }
-.reveal-elem.visible { opacity: 1; transform: translateY(0); }
+.footer { padding: 4vw; background: var(--text-color); color: var(--bg-color); }
+.social-links { display: flex; gap: 2rem; border-top: 1px solid #333; padding-top: 2rem; margin-top: 4rem; }
+.social-links a { color: var(--bg-color); text-decoration: none; font-family: var(--font-mono); }
