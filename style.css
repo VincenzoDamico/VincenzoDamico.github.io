@@ -32,7 +32,7 @@ body { background-color: var(--bg-color); color: var(--text-color); font-family:
 .card { display: block; text-decoration: none; color: var(--text-color); border: 1px solid var(--border-color); padding: 2rem; transition: all 0.4s; background: transparent; }
 .card:hover { background-color: var(--text-color); color: var(--bg-color); transform: translateY(-5px); }
 .card-header { display: flex; justify-content: space-between; margin-bottom: 2rem; }
-.tags span { border: 1px solid currentColor; padding: 0.2rem 0.6rem; font-family: var(--font-mono); font-size: 0.75rem; margin-right: 0.5rem; }
+.tags span { border: 1px solid currentColor; padding: 0.2rem 0.6rem; font-family: var(--font-mono); font-size: 0.75rem; margin-right: 0.5rem; display: inline-block; margin-bottom: 0.5rem; }
 
 /* Timeline */
 .timeline-item { border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 2rem; margin-bottom: 2rem; }
