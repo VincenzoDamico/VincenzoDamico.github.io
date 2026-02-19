@@ -47,3 +47,99 @@ body { background-color: var(--bg-color); color: var(--text-color); font-family:
 .footer { padding: 4vw; background: var(--text-color); color: var(--bg-color); }
 .social-links { display: flex; gap: 2rem; border-top: 1px solid #333; padding-top: 2rem; margin-top: 4rem; }
 .social-links a { color: var(--bg-color); text-decoration: none; font-family: var(--font-mono); }
+/* =========================================
+   MOBILE & TABLET RESPONSIVE SYSTEM
+   ========================================= */
+
+/* Tablet (Screens under 900px) */
+@media (max-width: 900px) {
+    .split-layout { 
+        grid-template-columns: 1fr; 
+        gap: 3rem; 
+    }
+    .sticky-sidebar { 
+        position: relative; 
+        top: 0; 
+    }
+    .hero-container {
+        padding: 6rem 5vw;
+        min-height: auto;
+    }
+}
+
+/* Mobile Phones (Screens under 768px) */
+@media (max-width: 768px) {
+    /* 1. Global Spacing */
+    .container { 
+        padding: 3rem 1.5rem; 
+    }
+    
+    /* 2. Navbar Restructuring */
+    .navbar { 
+        flex-direction: column; 
+        padding: 1.5rem; 
+        gap: 1rem; 
+    }
+    .nav-links { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 1.2rem; 
+        width: 100%;
+    }
+    .nav-links a { 
+        margin-left: 0; /* Removes desktop spacing */
+        font-size: 0.85rem; 
+    }
+
+    /* 3. Typography Adjustments */
+    .page-title { 
+        font-size: 2.8rem; /* Prevents text from breaking out of screen */
+    }
+    .stat-number { 
+        font-size: 2.5rem; 
+    }
+    
+    /* 4. Home Page Stats Grid */
+    .stats-grid { 
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+        text-align: center; /* Centers stats on mobile */
+        border-top: 1px solid var(--border-color);
+        padding-top: 2rem;
+    }
+
+    /* 5. Project Cards */
+    .card { 
+        padding: 1.5rem; 
+        min-height: auto; 
+    }
+    .card-header { 
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+    .tags span { 
+        font-size: 0.7rem; 
+        padding: 0.2rem 0.6rem; 
+    }
+
+    /* 6. Timeline Layout */
+    .timeline-item { 
+        padding-left: 1.5rem; 
+        padding-bottom: 2rem;
+    }
+    .timeline-item h3 { 
+        font-size: 1.4rem; 
+    }
+
+    /* 7. Footer */
+    .footer {
+        padding: 3rem 1.5rem;
+    }
+    .social-links { 
+        flex-direction: column; 
+        gap: 1.5rem; 
+        align-items: center; 
+        text-align: center; 
+    }
+}
