@@ -23,4 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
         .catch(error => console.error('Error loading footer:', error));
+
+    fetch('nav.html')
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to load nav");
+            return response.text();
+        })
+        .then(data => {
+            const footerPlaceholder = document.getElementById('nav-placeholder');
+            if (footerPlaceholder) {
+                footerPlaceholder.innerHTML = data;
+            }
+        })
+        .catch(error => console.error('Error loading nav:', error));
 });
