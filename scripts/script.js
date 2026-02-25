@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     // Dynamic Footer Loader
-    fetch('footer.html')
+    fetch('pages/fixed-element/footer.html')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load footer");
             return response.text();
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error loading footer:', error));
 
-    fetch('nav.html')
+    fetch('pages/fixed-element/nav.html')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load nav");
             return response.text();
