@@ -1,70 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Vincenzo Damico</title>
+    <meta name="description" content="Resume of Vincenzo Damico – Final-year MSc Telecommunication Engineering student specializing in IoT, Edge-Cloud ML, and distributed systems.">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="nav-placeholder"></div>
 
-
     <main class="container split-layout">
+
+        <!-- ── SIDEBAR ── -->
         <aside class="sticky-sidebar reveal">
             <h1 style="font-size: 3rem; line-height: 1; margin-bottom: 1rem;">Profile.</h1>
-            <p style="color: #555; margin-bottom: 2rem;">Aspiring Solution Architect driven by a passion for distributed systems, security, and high-pressure problem-solving.</p>
-            <a href="mailto:vdamicowork@gmail.com" style="text-decoration: underline; color: #000; font-weight: bold;">vdamicowork@gmail.com</a>
+            <p style="color: #555; margin-bottom: 1.5rem;">
+                Final-year Master's student in Telecommunication Engineering with a strong foundation in Computer
+                Engineering (BSc), specialising in IoT and Edge-Cloud ML. Seeking a software engineering internship
+                to apply hands-on experience in distributed systems and machine learning.
+            </p>
+            <p class="mono-text" style="font-size: 0.8rem; color: #777; margin-bottom: 0.5rem;">🇮🇹 Italian citizen · Ready to relocate</p>
+            <a href="mailto:vdamicowork@gmail.com"
+                style="display: block; text-decoration: underline; color: #000; font-weight: bold; margin-bottom: 0.5rem;">vdamicowork@gmail.com</a>
+            <a href="https://www.linkedin.com/in/vincenzo-damico-a927a1301/" target="_blank"
+                style="display: block; font-family: var(--font-mono); font-size: 0.8rem; color: #555; text-decoration: none; margin-bottom: 2rem;">↗ LinkedIn</a>
+
+            <!-- Skills quick-view -->
+            <div style="border-top: 1px solid #000; padding-top: 1.5rem;">
+                <p class="mono-text" style="margin-bottom: 1rem;">// Skills</p>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.88rem;">
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">LANGUAGES</span><br>
+                        <div class="tags" style="margin-top: 0.25rem;">
+                            <span>Java (Spring, JUnit)</span><span>Python</span><span>C</span><span>Kotlin</span><span>Dart (Flutter)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">ML</span><br>
+                        <div class="tags" style="margin-top: 0.25rem;">
+                            <span>Reinforcement Learning</span><span>TensorFlow / Keras</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">CLOUD & INFRA</span><br>
+                        <div class="tags" style="margin-top: 0.25rem;">
+                            <span>AWS</span><span>Node-RED</span><span>Linux</span><span>Docker</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">PROTOCOLS & SECURITY</span><br>
+                        <div class="tags" style="margin-top: 0.25rem;">
+                            <span>Bluetooth</span><span>ZigBee</span><span>LoRa</span><span>MQTT</span><span>RFID</span><span>REST</span><span>GraphQL</span><span>TLS</span><span>AES</span><span>HMAC</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">DEVOPS</span><br>
+                        <div class="tags" style="margin-top: 0.25rem;">
+                            <span>Agile</span><span>Scrum</span><span>CI/CD</span><span>Git</span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="mono-text" style="font-size: 0.72rem; color: #777;">LANGUAGES</span><br>
+                        <div class="tags" style="margin-top: 0.25rem; margin-bottom: 0;">
+                            <span>Italian (Native)</span><span>English (C1 – Cambridge B2)</span><span>German (Beginner)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
 
+        <!-- ── MAIN CONTENT ── -->
         <div class="reveal">
+
+            <!-- PROJECTS -->
             <section style="margin-bottom: 5rem;">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title">Projects</h2>
+
                 <div class="timeline-item">
-                    <div class="timeline-meta mono-text">Nov 2025 - Present</div>
-                    <h3>AWS Cloud Captain</h3>
-                    <p>Building an Amazon-partnered student community. [cite_start]Managing a core technical team of 5 Master's students, leveraging expertise in AI, Networking, and Cloud Infrastructure[cite: 14, 15, 101, 102].</p>
+                    <div class="timeline-meta mono-text">Nov 2024 – Mar 2025 · Rende (CS), Italy</div>
+                    <h3>Agent-Based Q-Learning Environment</h3>
+                    <div class="tags" style="margin-top: 0.75rem; margin-bottom: 1rem;">
+                        <span>Repast Simphony</span><span>Java</span><span>Reinforcement Learning</span>
+                    </div>
+                    <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Engineered a multi-agent Q-learning environment in Java (Repast Simphony) to train and
+                            evaluate AI models across 3×3 and 4×4 grid configurations.</li>
+                        <li>Resolved a 40 % win-rate stagnation by designing a custom <em>"double-step"</em> Q-table
+                            update algorithm that integrates opponent states to prevent model polarisation.</li>
+                    </ul>
                 </div>
+
                 <div class="timeline-item">
-                    <div class="timeline-meta mono-text">Dec 2025 - Present</div>
-                    <h3>Technical Director & Owner @ 3Borghi</h3>
-                    [cite_start]<p>Prototyping the monitoring and sharing platform for the Energy Community and managing the design of photovoltaic systems[cite: 45, 46, 97, 98].</p>
+                    <div class="timeline-meta mono-text">May 2025 – Jul 2025 · Rende (CS), Italy</div>
+                    <h3>Smart Healthcare Monitoring System <span style="font-size: 0.85rem; font-weight: 400; color: #666;">· Team of 2</span></h3>
+                    <div class="tags" style="margin-top: 0.75rem; margin-bottom: 1rem;">
+                        <span>Flutter</span><span>AWS</span><span>TensorFlow / Keras</span><span>Agile</span>
+                    </div>
+                    <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Engineered a PoC Flutter-based Edge-Cloud Heart Monitoring System on AWS applying Agile
+                            methodologies, integrating tiered TensorFlow AI models for remote and offline diagnostics.</li>
+                        <li>Achieved <strong>93.21 %</strong> Cloud and <strong>85.25 %</strong> Edge prediction accuracy
+                            by optimising hyperparameters of a pre-trained Keras model.</li>
+                    </ul>
                 </div>
             </section>
 
+            <!-- EDUCATION & CERTIFICATIONS -->
             <section style="margin-bottom: 5rem;">
-                <h2 class="section-title">Education & Certifications</h2>
+                <h2 class="section-title">Education &amp; Certifications</h2>
+
                 <div class="timeline-item">
+                    <div class="timeline-meta mono-text">Sept 2024 – Expected Dec 2026</div>
                     <h3>M.Sc. Telecommunication Engineering</h3>
-                    <p>Università della Calabria | [cite_start]Mean Grade: 30/30 (Taught in English)[cite: 51, 52, 104, 105].</p>
+                    <p>University of Calabria, Italy · <strong>GPA 4.0 / 4.0</strong> · Taught in English</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #444;">
+                        Relevant courses: Wireless Devices &amp; Networks · IoT Device Programming · Networking Aspects of IoT ·
+                        Antenna &amp; RFID · Mobile Radio (1G–5G) · Deep Learning
+                    </p>
                 </div>
+
                 <div class="timeline-item">
+                    <div class="timeline-meta mono-text">Sept 2021 – Apr 2025</div>
                     <h3>B.Sc. Computer Engineering</h3>
-                    <p>Università della Calabria | [cite_start]Final Grade: 104/110[cite: 55, 56, 108, 109].</p>
+                    <p>University of Calabria, Italy · <strong>GPA 3.9 / 4.0</strong> · Taught in Italian</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #444;">
+                        Relevant courses: Software Engineering · Mobile (Android) &amp; Linux · Web Platform · Machine Learning · Databases
+                    </p>
                 </div>
+
                 <div class="timeline-item">
-                    <h3>Certifications</h3>
-                    <p><strong>Oracle Cloud (OCI)</strong> Foundations Associate<br>
-                    [cite_start]<strong>R&D: Create - Protect - Innovate</strong> (Advanced Level) [cite: 42, 94]<br>
-                    [cite_start]<strong>English B2</strong> (Cambridge) [cite: 42, 94]</p>
+                    <div class="timeline-meta mono-text">26 Aug – 1 Sept 2025 · Belvedere (CS), Italy</div>
+                    <h3>Summer School – L'oro di Calabria</h3>
+                    <ul style="padding-left: 1.25rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Collaborated in a three-person team to conceptualise an innovative start-up idea in the AgriTech industry.</li>
+                        <li>Sharpened problem-solving, teamwork, and communication skills through feedback from journalism, marketing, and business professionals.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 0.25rem;">OCI · 2025</p>
                 </div>
             </section>
 
+            <!-- EXTRACURRICULAR -->
             <section style="margin-bottom: 5rem;">
-                <h2 class="section-title">Beyond the Code</h2>
+                <h2 class="section-title">Extracurricular</h2>
+
                 <div class="timeline-item">
-                    <h3>Italian Red Cross (Croce Rossa Italiana)</h3>
-                    <div class="timeline-meta mono-text">Active Member / Volunteer</div>
-                    <p>Dedicated to emergency response, community assistance, and crisis management. This experience has deeply ingrained in me the importance of teamwork, rapid decision-making, and remaining calm under high-pressure scenarios.</p>
+                    <div class="timeline-meta mono-text">Oct 2025 (online) · Dec 2025 – Present · Tortora (CS), Italy</div>
+                    <h3>Energy Community – 3Borghi <span style="font-size: 0.85rem; font-weight: 400; color: #666;">· Active Partner (20+ partners)</span></h3>
+                    <ul style="padding-left: 1.25rem; margin-top: 0.5rem;">
+                        <li>Improved alignment and project transparency by performing stakeholder management for 20+ partners.</li>
+                    </ul>
                 </div>
+
                 <div class="timeline-item">
-                    <h3>Scuba Diving</h3>
-                    <p>Passionate scuba diver. Navigating underwater environments requires meticulous planning, equipment mastery, and an unwavering adherence to safety protocols—skills that directly parallel my approach to designing secure and resilient IT infrastructures.</p>
+                    <div class="timeline-meta mono-text">Nov 2025 – Present · Rende (CS), Italy</div>
+                    <h3>AWS Cloud Captain <span style="font-size: 0.85rem; font-weight: 400; color: #666;">· Team Leader, Team of 5</span></h3>
+                    <ul style="padding-left: 1.25rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Upskilled 20+ engineers on 3 distinct AWS services by organising 5 hands-on workshops and providing personalised one-to-one coaching.</li>
+                        <li>Increased cloud literacy for a 40+ member audience by managing a LinkedIn community and delivering periodic technical updates on AWS service evolutions.</li>
+                    </ul>
                 </div>
             </section>
+
         </div>
     </main>
+
     <div id="footer-placeholder"></div>
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>

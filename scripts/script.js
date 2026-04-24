@@ -39,6 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const navPlaceholder = document.getElementById('nav-placeholder');
             if (navPlaceholder) {
                 navPlaceholder.innerHTML = data;
+                
+                // Set active link highlight
+                const links = navPlaceholder.querySelectorAll('.nav-links a');
+                const currentPath = window.location.pathname;
+                links.forEach(link => {
+                    const linkPath = new URL(link.href).pathname;
+                    if (currentPath === linkPath || (currentPath === '/' && linkPath.includes('index.html'))) {
+                        link.classList.add('active');
+                    }
+                });
             }
         })
         .catch(error => console.error('Error loading nav:', error));
