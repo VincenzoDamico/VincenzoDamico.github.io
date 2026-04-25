@@ -216,8 +216,13 @@
     }
 
     .pdf-viewer-section {
+        order: 2;
         position: relative;
         top: 0;
+    }
+
+    .article-content {
+        order: 1;
     }
 
     .pdf-viewer-wrapper {

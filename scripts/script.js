@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         link.classList.add('active');
                     }
                 });
+
+                // Hamburger Menu Toggle
+                const toggleBtn = navPlaceholder.querySelector('.nav-toggle');
+                const navLinksContainer = navPlaceholder.querySelector('.nav-links');
+                if (toggleBtn && navLinksContainer) {
+                    toggleBtn.addEventListener('click', () => {
+                        toggleBtn.classList.toggle('open');
+                        navLinksContainer.classList.toggle('open');
+                    });
+                }
             }
         })
         .catch(error => console.error('Error loading nav:', error));
