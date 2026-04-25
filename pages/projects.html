@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects and Labs of Vincenzo Damico. Showcasing software architecture, edge-cloud ML, electrical layouts, and academic research.">
     <title>Projects | Vincenzo Damico</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -9,32 +11,45 @@
 <body>
     <div id="nav-placeholder"></div>
 
-
     <main class="container">
         <h1 class="page-title reveal">Systems &<br>Research.</h1>
 
         <section style="margin-top: 5rem;" class="reveal">
             <h2 class="section-title">Software & Cloud Infrastructure</h2>
             <div class="grid">
-            <a href="project-healthcare.html" class="card">
+                <a href="article-smart-healthcare.html" class="card">
                     <div class="card-header"><span class="mono-text">EDGE-CLOUD ML</span></div>
                     <h3 style="margin-bottom: 1rem;">Smart Healthcare Diagnostics</h3>
                     <p style="margin-bottom: 1.5rem;">Engineered an AWS-hosted monitoring system implementing tiered TensorFlow AI models.</p>
                     <div class="tags"><span>AWS</span><span>TensorFlow</span><span>Flutter</span></div>
                 </a>
                 
-                <a href="project-smartlock.html" class="card">
+                <a href="article-iot-security.html" class="card">
                     <div class="card-header"><span class="mono-text">CYBERSECURITY</span></div>
                     <h3 style="margin-bottom: 1rem;">Secure Smart Lock IoT</h3>
                     <p style="margin-bottom: 1.5rem;">Developed a Remote Lock System with MQTTS and secure Bluetooth (AES/HMAC).</p>
                     <div class="tags"><span>MQTTS</span><span>AES</span><span>Wireshark</span></div>
                 </a>
 
-                <a href="project-arenabank.html" class="card">
-                    <div class="card-header"><span class="mono-text">DISTRIBUTED SYSTEM</span></div>
-                    <h3 style="margin-bottom: 1rem;">ArenaBank Simulation</h3>
-                    <p style="margin-bottom: 1.5rem;">Architected backend logic for a robust banking simulation prioritizing transaction integrity.</p>
-                    <div class="tags"><span>Java</span><span>Architecture</span></div>
+                <a href="article-repast-thesis.html" class="card">
+                    <div class="card-header"><span class="mono-text">THESIS / Q-LEARNING</span></div>
+                    <h3 style="margin-bottom: 1rem;">RL Agent-Based Environment</h3>
+                    <p style="margin-bottom: 1.5rem;">Engineered a multi-agent Reinforcement Learning environment using Java and Repast Simphony.</p>
+                    <div class="tags"><span>Java</span><span>AI</span><span>Repast Simphony</span></div>
+                </a>
+
+                <a href="article-iot-museum.html" class="card">
+                    <div class="card-header"><span class="mono-text">EDGE IOT</span></div>
+                    <h3 style="margin-bottom: 1rem;">Smart Museum Env. Monitor</h3>
+                    <p style="margin-bottom: 1.5rem;">Full-stack sensor network utilizing TelosB edge routing into a cloud Firebase backend.</p>
+                    <div class="tags"><span>Python</span><span>Node-RED</span><span>TelosB</span></div>
+                </a>
+
+                <a href="article-football-hostapp.html" class="card">
+                    <div class="card-header"><span class="mono-text">MOBILE APP</span></div>
+                    <h3 style="margin-bottom: 1rem;">Football Field Booking App</h3>
+                    <p style="margin-bottom: 1.5rem;">Front-end host application interface logically designed for local sport center scheduling.</p>
+                    <div class="tags"><span>Dart</span><span>Flutter</span></div>
                 </a>
             </div>
         </section>
@@ -42,26 +57,45 @@
         <section style="margin-top: 5rem;" class="reveal">
             <h2 class="section-title">Hardware & Electrical Labs</h2>
             <div class="grid">
-                <a href="../assets/slides/Evaluating the Cutoff Frequency of an RC low-Pass Filter.pdf" class="card" target="_blank">
+                <a href="article-antenna-design.html" class="card">
+                    <h3 style="margin-bottom: 0.5rem;">Patch Antenna Design</h3>
+                    <p>Simulation and theoretical evaluation of a Patch Antenna telecommunication layout.</p>
+                </a>
+                <a href="article-rc-lowpass.html" class="card">
                     <h3 style="margin-bottom: 0.5rem;">RC Low-Pass Filter</h3>
-                    <p>Evaluating the Cutoff Frequency of an RC Low-Pass Filter.</p>
+                    <p>Evaluating the cutoff frequency dynamics of a simple RC configuration.</p>
                 </a>
-                <a href="../assets/slides/Evaluation of  the Vpp and its uncertainty using an oscilloscope.pdf" class="card" target="_blank">
+                <a href="article-oscilloscope-vpp.html" class="card">
                     <h3 style="margin-bottom: 0.5rem;">Oscilloscope Vpp Uncertainty</h3>
-                    <p>Statistical evaluation of voltage peaks using precision oscilloscopes.</p>
+                    <p>Statistical evaluation of voltage peaks (Vpp) using precision oscilloscopes.</p>
                 </a>
-                <a href="../assets/slides/Evaluation of the Multimeter's Bandpass.pdf" class="card" target="_blank">
+                <a href="article-multimeter-bandpass.html" class="card">
                     <h3 style="margin-bottom: 0.5rem;">Multimeter Bandpass</h3>
                     <p>Evaluating the frequency response characteristics of digital multimeters.</p>
+                </a>
+                <a href="article-ac-amplitude.html" class="card">
+                    <h3 style="margin-bottom: 0.5rem;">AC Signals Amplitude</h3>
+                    <p>Observing and analyzing amplitude differences across standard Altering Current waveforms.</p>
                 </a>
             </div>
         </section>
         
-        <section style="margin-top: 5rem;" class="reveal">
+        <section style="margin-top: 5rem; margin-bottom: 5rem;" class="reveal">
             <h2 class="section-title">Strategy & Research</h2>
-            <div class="timeline-item">
-                <h3>PlantOracle (Start-up Conceptualization)</h3>
-                <p>Collaborated within a three-person team to conceptualize a start-up. Performed a comprehensive literature review on epigenetic analysis to conceptualize a software solution providing early, predictive estimates of plant illness susceptibility.</p>
+            <div class="grid">
+                <a href="article-plantoracle.html" class="card">
+                    <div class="card-header"><span class="mono-text">START-UP CONCEPT</span></div>
+                    <h3 style="margin-bottom: 1rem;">PlantOracle</h3>
+                    <p style="margin-bottom: 1.5rem;">Comprehensive literature review on epigenetic analysis for predictive plant illness software.</p>
+                    <div class="tags"><span>AgriTech</span><span>R&D</span></div>
+                </a>
+                
+                <a href="article-digital-economy.html" class="card">
+                    <div class="card-header"><span class="mono-text">ACADEMIC REVIEW</span></div>
+                    <h3 style="margin-bottom: 1rem;">Digital Economy Landscape</h3>
+                    <p style="margin-bottom: 1.5rem;">Research on the frameworks, macro-trends, and societal impacts of the modern Digital Economy.</p>
+                    <div class="tags"><span>Strategy</span><span>Economics</span></div>
+                </a>
             </div>
         </section>
     </main>
