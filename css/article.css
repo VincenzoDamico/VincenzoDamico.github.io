@@ -257,4 +257,12 @@
         flex-direction: column;
         gap: 1rem;
     }
+
+    .article-content {
+        padding: 0 0.5rem;
+    }
+
+    .article-body p {
+        text-align: left; /* Justify creates rigid, edge-touching lines on small screens */
+    }
 }
